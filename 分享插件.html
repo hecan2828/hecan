@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <div class="txtbot clear"> 
+        <!--  分享集群  -->
+        <div id="share_wrap" class="share_wrap">
+          <div class="bshare-custom icon-medium"><div class="bsPromo bsPromo2"></div><span style="position: relative;top: 3px;">分享到:</span> <a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin" onclick="weixin_share(event);"></a><a class="share_weimi" id="weimi" href="javascript:void(0);" onclick="game_global_pop(this.id)" title="分享到微米"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到QQ好友" class="bshare-qqim"></a><a title="分享到豆瓣" class="bshare-douban"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div>
+        </div>
+        <script charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;game_global_pophcol=2&amp;lang=zh"></script> 
+        <script charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script> 
+        <script src="http://games.sina.com.cn/131/20140526/214/game_share.js" charset="gbk"></script> 
+        <script type="text/javascript">
+                        bShare.addEntry({
+                          url:'http://doc.sina.cn/?id=gsps:115-9-831320' // 获取文章链接
+                        });
+                    </script> 
+        <!--  分享集群end  -->
+        <div class="txtbotright">
+          <div class="comment fl"><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yx&amp;newsid=comos-fxwevmf2031012" target="_blank" title="去看评论">
+            <p id="comment_count">1</p>
+            </a></div>
+          <script>
+                    //加载评论数
+                    
+                    $.ajax({
+                        dataType: "jsonp",
+                        url: "http://comment5.news.sina.com.cn/cmnt/count?format=json&newslist=yx:"+ARTICLE_DATA.newsid+":0&oe=utf-8",
+                        success: function(data){
+                            //console.log(data);
+                             var count = data['result']['count']['yx:'+ARTICLE_DATA.newsid+':0']?data['result']['count']['yx:'+ARTICLE_DATA.newsid+':0']['total']:0;
+                             $('#comment_count').text(count);
+                        }
+                    });
+                    </script>
+          <div class="font_l fl"><a href="javascript:Fontzoom('l');"></a></div>
+          <div class="font_s fl"><a href="javascript:Fontzoom('s');"></a></div>
+        </div>
+      </div>
+ </body>
+</html>
